@@ -83,8 +83,9 @@ font-size: 22px;
 
 
 }
-.contact-right textarea{
-    width: 650px;
+.contact-right textarea {
+    width: 100%;
+    max-width: 750px; /* Optional: Set a maximum width */
     border: none;
     padding: 25px;
     border-radius: 4px;
@@ -92,6 +93,7 @@ font-size: 22px;
     color: #D8D8D8;
     font-family: Outfit;
     font-size: 20px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
 }
 .contact-submit{
    border: none;
@@ -151,9 +153,17 @@ font-size: 22px;
 
     font-size: 20px;
 }
-.contact-right textarea{
-    width: 95%;
+.contact-right textarea {
+    width: 100%;
+    max-width: 750px; /* Optional: Set a maximum width */
+    border: none;
+    padding: 25px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #D8D8D8;
+    font-family: Outfit;
     font-size: 20px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
 }
 .contact-submit{
     font-size: 20px;
