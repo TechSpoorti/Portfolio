@@ -72,16 +72,18 @@ cursor: pointer;
         width: 130px;
         margin-left: -20px;
     }
-    .mywork-container{
+    .mywork-container {
+        display: grid;
         grid-template-columns: 1fr;
-        gap:30px ;
+        gap: 30px;
         width: 100%;
         overflow: hidden;
-
+        justify-items: center; /* Center the images within the container */
     }
-    .mywork-container img{
-        width: 40%;
-        height: auto;
+    .mywork-container img {
+        width: 100%; /* Ensure images take up the full width of the container */
+        max-width: 500px; /* Optional: Set a max-width for better control */
+        height: auto; /* Maintain aspect ratio */
     }
     .mywork-showmore{
         padding: 20px 40px;

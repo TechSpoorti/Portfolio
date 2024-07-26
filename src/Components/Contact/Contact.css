@@ -84,7 +84,7 @@ font-size: 22px;
 
 }
 .contact-right textarea {
-    width: 700; /* Optional: Set a maximum width */
+    width: 100%; /* Optional: Set a maximum width */
     border: none;
     padding: 25px;
     border-radius: 4px;
