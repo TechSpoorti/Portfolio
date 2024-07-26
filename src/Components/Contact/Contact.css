@@ -180,7 +180,11 @@
 
     .contact-right input,
     .contact-right textarea {
-        font-size: 18px; /* Adjust font size for mobile */
+        font-size: 18px;
+        padding: 20px; /*  /* Adjust font size for mobile */
+    }
+    .contact-right textarea {
+        margin-bottom: 15px; /* Adjust margin for mobile */
     }
 
     .contact-submit {
