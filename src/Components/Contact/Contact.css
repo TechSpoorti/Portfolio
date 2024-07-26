@@ -109,7 +109,7 @@ font-size: 22px;
     transform: scale(1.1);
     transition: 0.3s;
 }
-@media(max-width:768px){
+@media(max-width:750px){
 .contact{
     gap: 50px;
     margin: 50px 30px ;
