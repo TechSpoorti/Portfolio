@@ -111,7 +111,7 @@ font-size: 22px;
 @media(max-width:768px){
 .contact{
     gap: 50px;
-    margin: 50px 70px ;
+    margin: 50px 50px ;
     align-items: start;
 
 }
