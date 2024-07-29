@@ -139,7 +139,7 @@ margin-bottom: 80px;
   }
 
   .about-title img {
-      width: 100px; /* Adjust width for mobile */
+      width: 100px; 
   }
   .about-section{
     flex-direction: column;
@@ -174,7 +174,7 @@ margin-bottom: 80px;
 
   .about-achive  {
       gap: 20px;
-      padding: 18px;
+      padding: 20px;
   }
   .about-achive h1 {
   font-size: 34px;

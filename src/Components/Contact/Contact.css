@@ -130,7 +130,7 @@
 @media (max-width: 480px) {
     .contact {
         gap: 50px;
-        margin: 50px 30px;
+        margin: 50px 10px;
         align-items: start;
     }
 
@@ -178,13 +178,13 @@
         font-size: 20px;
     }
 
-    .contact-right input,
-    .contact-right textarea {
-        font-size: 18px;
-        padding: 20px; /*  /* Adjust font size for mobile */
+    .contact-right input {
+        width:95%;
+        
     }
     .contact-right textarea {
-        margin-bottom: 15px; /* Adjust margin for mobile */
+        margin-bottom: 15px;
+        font-size: 18px; /* Adjust margin for mobile */
     }
 
     .contact-submit {
