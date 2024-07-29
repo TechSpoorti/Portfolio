@@ -89,9 +89,13 @@
     }
 
     .mywork-container img {
-        width: 100%;
-        height: auto; /* Maintain aspect ratio */
-        object-fit: cover;
+        .mywork-container img {
+            box-sizing: border-box;
+            width: 100%; /* Ensure images take full width of their container */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Ensure the image fits within the container */
+        }
+        
          
     }
 
