@@ -90,7 +90,7 @@
 
     .mywork-container img {
 
-        width: 100%; /* Ensure images fit within the container */
+        width: 100px; /* Ensure images fit within the container */
         height:100%; /* Maintain aspect ratio */
     }
 
