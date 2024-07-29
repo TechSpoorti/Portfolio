@@ -66,8 +66,8 @@
 
 @media(max-width: 480px) {
     .mywork {
-        gap: 50px;
-        margin: 50px 20px;
+        gap: 30px;
+        margin: 20px;
         align-items: start;
     }
 
@@ -89,9 +89,10 @@
     }
 
     .mywork-container img {
-
-        width: 100px; /* Ensure images fit within the container */
-        height:100%; /* Maintain aspect ratio */
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+         
     }
 
     .mywork-showmore {
