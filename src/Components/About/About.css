@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 35px;
-  padding: 20px; /* Add padding for better spacing */
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
 }
 
 .about-title {
@@ -26,9 +27,8 @@
 
 .about-section {
   display: flex;
-  flex-direction: column; /* Stack left and right sections vertically */
-  align-items: center;
-  gap: 20px; /* Reduce gap for mobile */
+ 
+  gap: 80px; /* Reduce gap for mobile */
 }
 
 .about-left {
@@ -37,106 +37,152 @@
 }
 
 .about-left img {
-  width: 180px; /* Adjust size for mobile */
-  height: 180px; /* Adjust size for mobile */
-  border-radius: 50%;
+  width: 400px; /* Adjust size for mobile */
+  height: 500px; /* Adjust size for mobile */
+  
   object-fit: cover;
 }
 
 .about-right {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px; /* Reduce gap for mobile */
-  width: 90%;
+  
+  gap: 80px; /* Reduce gap for mobile */
+  
 }
 
 .about-para {
-  text-align: center;
-  font-size: 18px; /* Adjust font size for mobile */
+display: flex;
+flex-direction: column;
+gap: 20px;
+font-size: 24px;
+font-weight: 500;
 }
 
 .about-skills {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Reduce gap for mobile */
-  width: 100%;
+  gap: 20px;
 }
 
 .about-skill {
   display: flex;
+  gap: 50px;
   align-items: center;
-  gap: 10px; /* Adjust gap for mobile */
+  transition: 0.3s;
+
 }
 
 .about-skill p {
-  flex: 1;
-  font-size: 18px; /* Adjust font size for mobile */
+min-width: 150px;
+font-size: 24px;
+font-weight: 500;
+}
+.about-skill hr{
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 8px;
+  border-radius: 50px;
+  background: linear-gradient(264deg,#DF8908 -5.09%,#B415FF 106.28%);
 }
 
 .about-achivement {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px; /* Reduce gap for mobile */
+justify-content: space-around;
+margin-bottom: 80px;
   width: 100%;
 }
 
 .about-achive {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s;
+
 }
 
 .about-achive h1 {
-  font-size: 36px; /* Adjust font size for mobile */
+  font-size: 60px; 
+  font-weight: 700;
+  background: linear-gradient(264deg,#DF8908 50.41%,#B415FF 90.25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about-achive p {
-  font-size: 18px; /* Adjust font size for mobile */
+  font-size: 22px;
+  font-weight: 500;
+}
+.about-skill:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.about-achive:hover{
+  transform: scale(1.12);
+  transition: 0.5s;
+
 }
 
 @media (max-width: 750px) {
   .about {
-      padding: 20px; /* Add padding for better spacing */
+    gap:80px;
+    margin: 50px 70px;
+    align-items: start;
   }
 
   .about-title h1 {
-      font-size: 50px; /* Adjust font size for mobile */
+      font-size: 50px; 
+      padding: 0;
   }
 
   .about-title img {
       width: 100px; /* Adjust width for mobile */
   }
-
-  .about-left img {
-      width: 150px; /* Adjust size for mobile */
-      height: 150px; /* Adjust size for mobile */
+  .about-section{
+    flex-direction: column;
   }
 
-  .about-right {
-      width: 100%; /* Full width for mobile */
+  .about-left{
+  display: none;
   }
+
+ 
 
   .about-para {
-      font-size: 16px; /* Adjust font size for mobile */
+      font-size: 18px; 
+      line-height: 32px;/* Adjust font size for mobile */
   }
 
-  .about-skills {
-      gap: 5px; /* Reduce gap for mobile */
+  .about-skill{
+      gap: 20px;
+      align-items: center; 
   }
 
   .about-skill p {
-      font-size: 16px; /* Adjust font size for mobile */
+      font-size: 20px; /* Adjust font size for mobile */
+  }
+  .about-skill hr{
+    height: 6px;
   }
 
   .about-achivement {
-      gap: 10px; /* Reduce gap for mobile */
+      justify-content: space-between;
   }
 
-  .about-achive h1 {
-      font-size: 30px; /* Adjust font size for mobile */
+  .about-achive  {
+      gap: 20px;
+      padding: 18px;
   }
+  .about-achive h1 {
+  font-size: 34px;
+  font-weight: 700;
+}
 
   .about-achive p {
-      font-size: 16px; /* Adjust font size for mobile */
+      text-align: center;
+      font-size: 16px; 
   }
 }

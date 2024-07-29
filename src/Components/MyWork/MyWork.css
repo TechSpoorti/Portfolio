@@ -67,8 +67,8 @@
 @media(max-width: 750px) {
     .mywork {
         gap: 50px;
-        margin: 50px 20px;
-        align-items: center;
+        margin: 50px 70px;
+        align-items: start;
     }
 
     .mywork-title h1 {
@@ -79,19 +79,19 @@
 
     .mywork-title img {
         width: 130px;
-        margin-left: -20px;
+        margin-left:200px;
     }
 
     .mywork-container {
+   
         grid-template-columns: 1fr; /* Single column layout on small screens */
-        gap: 20px; /* Reduced gap for better fit on mobile */
-        width: 100%; /* Ensure the container takes full width */
+       
     }
 
     .mywork-container img {
+
         width: 100%; /* Ensure images fit within the container */
-        height: auto; /* Maintain aspect ratio */
-        max-width: 100%; /* Optional: Ensure images do not exceed container width */
+        height:100%; /* Maintain aspect ratio */
     }
 
     .mywork-showmore {
