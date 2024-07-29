@@ -129,7 +129,7 @@ margin-bottom: 80px;
 @media (max-width: 480px) {
   .about {
     gap:80px;
-    margin: 50px 70px;
+    margin: 50px 20px;
     align-items: start;
   }
 
