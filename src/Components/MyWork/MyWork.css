@@ -93,7 +93,7 @@
             box-sizing: border-box;
             width: 100%; /* Ensure images take full width of their container */
             height: auto; /* Maintain aspect ratio */
-            object-fit: contain; /* Ensure the image fits within the container */
+            object-fit: cover; /* Ensure the image fits within the container */
         }
         
          
