@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="footer-bottom">
             <p className="footer-bottom-left">@ 2024 Spoorti Angadi.All right reserved</p>
             <div className="footer-bottom-right">
-                <p>Trem of Services</p>
+                <p>Term of Services</p>
                 <p>Privacy Policy</p>
                 <p>Connect with me</p>
             </div>
