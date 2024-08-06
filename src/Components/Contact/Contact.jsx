@@ -8,26 +8,45 @@ import call_icon from "../../assets/call_icon.svg"
 const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
+  
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const message = event.target.message.value;
+  
+    if (!name || !email || !message) {
+      alert('All fields are required.');
+      return;
+    }
+  
     const formData = new FormData(event.target);
-
     formData.append("access_key", "d90c5a3c-8473-45be-b98f-78c71e4b3955");
-
+  
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
-
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: json
-    }).then((res) => res.json());
-
-    if (res.success) {
-      alert(res.message)
+  
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+      });
+      
+      const result = await res.json();
+  
+      if (result.success) {
+        alert(result.message);
+      } else {
+        alert('Submission failed. Please try again.');
+      }
+    } catch (error) {
+      alert('An error occurred. Please try again.');
     }
   };
+  
+
 
 
   return (

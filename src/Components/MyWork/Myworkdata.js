@@ -18,17 +18,17 @@ const Myworkdata = [
     {
         w_no:3,
         w_name:"Web design",
-        w_img:project1
+        w_img:project4
     },
     {
         w_no:4,
         w_name:"Web design",
-        w_img:project4
+        w_img:project5
     },
     {
         w_no:5,
         w_name:"Web design",
-        w_img:project5
+        w_img:project1
     }
 
 ]
