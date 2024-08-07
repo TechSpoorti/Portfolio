@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.4db87fdf.css",
-    "main.js": "/Portfolio/static/js/main.0ec90337.js",
+    "main.js": "/Portfolio/static/js/main.ac564a15.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/Spoorti-Resume.pdf": "/Portfolio/static/media/Spoorti-Resume.01d3cf0d36ed19b7ff56.pdf",
     "static/media/project3.jpg": "/Portfolio/static/media/project3.7b424e8cae8df41a5ff2.jpg",
@@ -21,11 +21,11 @@
     "static/media/location_icon.svg": "/Portfolio/static/media/location_icon.111157f177e78ee2c0025016c0206379.svg",
     "static/media/menu_open.svg": "/Portfolio/static/media/menu_open.f6a63a18e3c68d807e50b1037f3e3555.svg",
     "main.4db87fdf.css.map": "/Portfolio/static/css/main.4db87fdf.css.map",
-    "main.0ec90337.js.map": "/Portfolio/static/js/main.0ec90337.js.map",
+    "main.ac564a15.js.map": "/Portfolio/static/js/main.ac564a15.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4db87fdf.css",
-    "static/js/main.0ec90337.js"
+    "static/js/main.ac564a15.js"
   ]
 }
