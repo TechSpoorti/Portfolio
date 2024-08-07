@@ -2,8 +2,23 @@ import React from 'react'
 import "./Footer.css"
 import logo1 from "../../assets/logo1.svg"
 import user_icon from "../../assets/user_icon.svg"
+import { useState } from 'react'
 
 const Footer = () => {
+    const [email, setEmail] = useState('');
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const onClick = () => {
+    if (email) {
+      alert("Subscribed");
+      setEmail("");
+    } else {
+      alert("Please enter your email.");
+    }
+  };
   return (
     <div className='footer'>
         <div className="footer-top">
@@ -12,11 +27,12 @@ const Footer = () => {
                 <p>Im fullstack developer</p>
             </div>
             <div className="footer-top-right">
+                
                 <div className="footer-email-input">
                     <img src={user_icon} alt="" />
-                    <input type="email" placeholder='ur email' />
+                    <input type="email" placeholder='ur email' value={email} onChange={handleEmailChange} />
                 </div>
-                <div className="footer-subcribe">Subcribe</div>
+                <div className="footer-subcribe" onClick={onClick}>Subcribe</div>
             </div>
         </div>
         <hr/>
